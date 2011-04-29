@@ -41,6 +41,7 @@ Hermits United. We meet up every ten years. Swap stories about caves. It's good 
 function hello_dolly() {
 	$chosen = hello_dolly_get_lyric();
 	echo "<p id='dolly'>$chosen</p>";
+	echo "<p id='doctor'>Dr Who<p>";
 }
 
 // Now we set that function up to execute when the admin_footer action is called
@@ -59,7 +60,23 @@ function dolly_css() {
 		margin: 0;
 		padding: 0;
 		$x: 215px;
-		font-size: 11px;
+		font-size: 12px;
+		color: red;
+	}
+	</style>
+	";
+	
+	echo "
+	<style type='text/css'>
+	#doctor {
+		position: absolute;
+		top: 4.5em;
+		margin: 0;
+		padding: 0;
+		$x: 170px;
+		font-size: 12px;
+		color: black;
+		font-style: italic;
 	}
 	</style>
 	";
