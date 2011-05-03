@@ -28,7 +28,20 @@ Overconfidence, this, and a small screwdriver. I’m absolutely sorted.
 Allons-y!
 It is! It's the city of New New York! Strictly speaking, it's the fifteenth New York since the original, so that makes it New-New-New-New-...
 Reinette: Oh, this is my lover, the King of France. The Doctor: Yeah? Well I'm the Lord of Time.
-Hermits United. We meet up every ten years. Swap stories about caves. It's good fun... for a hermit.";
+Hermits United. We meet up every ten years. Swap stories about caves. It's good fun... for a hermit.
+Right, so what are we gonna do? Eat crisps and talk about girls? I've never done that, but I bet it's easy. Girls, yeah?
+Y'know, this isn't nearly as bad as it looks.
+Amy: This is it, yeah? The right place? Rory: Uh, Nowhere, Middle of? Yeah, this is it.
+Amy: Nice hat. The Doctor: I wear a stetson now. Stetsons are cool.
+River: This is cold. Even by your standards, this is cold. The Doctor: Or, 'Hello,' as people used to say.
+I'm being extremely clever up here and there's no one to stand around looking impressed! What's the point in having you all?
+Time isn't a straight line, it's all bumpy-wumpy. There's loads of boring stuff, like Sundays and Tuesdays and Thursday afternoons. But now and then there are Saturdays, big temporal tipping points when anything's possible.
+The Doctor: Give a shout if you get into any trouble. River Song: Oh, don't worry. I'm quite the screamer. Now there's a spoiler for you.
+Canton: What about Dr. Song? She dove off a rooftop! The Doctor: Don't worry. She does that.
+Oh this is my friend River. Nice hair, clever, and has her own gun. And unlike me she really doesn't mind shooting people. I shouldn't like that. Kinda do, a bit.
+River: Oh, the first seven, easy. The Doctor: Seven, really? R: Oh, eight for you, honey. TD: Stop it! R: Make me! TD: Oh, maybe I will!
+Safe? No, of course you're not safe! There's about another billion things out there just waiting to burn your whole world, but, if you wanna pretend you're safe just so you can sleep at night, okay, you're safe. But you're not really.
+Nixon: This person you want to marry: black? Canton: Yes... Nixon: I know what people think of me, but perhaps I am a little more liberal.. Canton: He is. [Nixon looks stunned as realisation hits]";
 
 	// Here we split it into lines
 	$lyrics = explode("\n", $lyrics);
