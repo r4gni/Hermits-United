@@ -1,0 +1,10 @@
+An adaptation of the Hello Dolly-plugin for Wordpress with my own personal favourite Doctor Who quotes. Quotes taken from the wikiquote-site for Doctor Who. The original plugin was written by Matt Mullenweg.
+
+Installation instructions:
+Unzip/untar and put the folder into the wp-content/plugins-folder. After that you should find a new plugin with the mane "Hermits United" in your plugin list in the admin section of your Wordpress site. Click "activate".
+
+The quote should now show in red letters in the upper third of your dashboard.
+
+If something breaks during install, try using your sonic screwdriver (you might try the lipstick, too). If this doesn't work, make it up as you go along (or delete the "Hermits United"-folder in wp-content/plugins). Issue reports go here: https://github.com/r4gni/Hermits-United/issues/new
+
+Enjoy!
