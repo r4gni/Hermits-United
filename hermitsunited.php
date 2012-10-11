@@ -18,8 +18,8 @@ Safe? No, of course you're not safe! There's about another billion things out th
 
 */
 
-function hello_dolly_get_lyric() {
-	/** These are the lyrics to Hello Dolly */
+function hello_doctor_get_lyric() {
+	/** The Eleventh Doctor of Doctor Who*/
 	$lyrics = "
 King Louis: I'm the King of France! Doctor Who: Yeah? Well I'm the Lord of Time
 Ah! Yes! Blimey, sorry! Christmas Eve on a rooftop I saw a chimney... my whole brain just went... What the hell!
@@ -50,7 +50,10 @@ Amy: Why did you do that? Doctor: Oh, I always rip out the last page of a book. 
 Amy: You laughed!  The Doctor: No, that was just an involuntary snort... of fondness.
 Rory: There are soldiers all over my house, and I'm in my pants. Amy: My whole life I've dreamed of saying that, and I miss it by being someone else.
 The Doctor: (to Amy) Because you were the first. And you're seared onto my hearts, Amelia Pond. I'm running to you and Rory before you fade from me.
-Preacher: What? The Doctor: I speak horse. He's called Susan. [The horse snorts] The Doctor: And he wants you to respect his life choices.;"
+Preacher: What? The Doctor: I speak horse. He's called Susan. [The horse snorts] The Doctor: And he wants you to respect his life choices.
+Amy: I'm easily worth two men. You can help, too, if you'd like.
+Dalek Prime Minister: Does it surprise you to know the Daleks have a concept of beauty?<p />The Doctor: I thought you'd run out of ways to make me sick, but hello again. You think hatred is beautiful?<p />Dalek Prime Minister: Perhaps that is why we have never been able to kill you.
+;"
 
 	// Here we split it into lines
 	$lyrics = explode("\n", $lyrics);
@@ -60,17 +63,17 @@ Preacher: What? The Doctor: I speak horse. He's called Susan. [The horse snorts]
 }
 
 // This just echoes the chosen line, we'll position it later
-function hello_dolly() {
-	$chosen = hello_dolly_get_lyric();
+function hello_doctor() {
+	$chosen = hello_doctor_get_lyric();
 	echo "<p id='dolly'>$chosen</p>";
 	echo "<p id='doctor'>Dr Who<p>";
 }
 
 // Now we set that function up to execute when the admin_footer action is called
-add_action('admin_footer', 'hello_dolly');
+add_action('admin_footer', 'hello_doctor');
 
 // We need some CSS to position the paragraph
-function dolly_css() {
+function doctor_css() {
 	// This makes sure that the posinioning is also good for right-to-left languages
 	$x = ( is_rtl() ) ? 'left' : 'right';
 
@@ -104,6 +107,6 @@ function dolly_css() {
 	";
 }
 
-add_action('admin_head', 'dolly_css');
+add_action('admin_head', 'doctor_css');
 
 ?>
