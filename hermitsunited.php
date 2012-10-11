@@ -45,7 +45,10 @@ The Doctor: Give a shout if you get into any trouble. River Song: Oh, don't worr
 Canton: What about Dr. Song? She dove off a rooftop! The Doctor: Don't worry. She does that.
 Oh this is my friend River. Nice hair, clever, and has her own gun. And unlike me she really doesn't mind shooting people. I shouldn't like that.
 River: Oh, the first seven, easy. The Doctor: Seven, really? R: Oh, eight for you, honey. TD: Stop it! R: Make me! TD: Oh, maybe I will!
-Nixon: This person you want to marry: black? Canton: Yes... Nixon: I know what people think of me, but perhaps I am a little more liberal.. Canton: He is.";
+Nixon: This person you want to marry: black? Canton: Yes... Nixon: I know what people think of me, but perhaps I am a little more liberal.. Canton: He is.
+Amy: Why did you do that? Doctor: Oh, I always rip out the last page of a book. Then it doesn't have to end. I hate endings!
+Amy: You laughed! The Doctor: No, that was just an involuntary snort... of fondness.
+Rory: There are soldiers all over my house, and I'm in my pants. Amy: My whole life I've dreamed of saying that, and I miss it by being someone else.;"
 
 	// Here we split it into lines
 	$lyrics = explode("\n", $lyrics);
