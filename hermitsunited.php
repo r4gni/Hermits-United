@@ -53,6 +53,8 @@ The Doctor: (to Amy) Because you were the first. And you're seared onto my heart
 Preacher: What? The Doctor: I speak horse. He's called Susan. [The horse snorts] The Doctor: And he wants you to respect his life choices.
 Amy: I'm easily worth two men. You can help, too, if you'd like.
 Dalek Prime Minister: Does it surprise you to know the Daleks have a concept of beauty?<p />The Doctor: I thought you'd run out of ways to make me sick, but hello again. You think hatred is beautiful?<p />Dalek Prime Minister: Perhaps that is why we have never been able to kill you.
+The Doctor: I just need to find the key.<br />Madge: Do you want me to do it with a pin? I'm good with a pin.<br />The Doctor: Multidimensional, triple-encoded temporal interface. Not really susceptible to pointy things.<br />Madge: [Unlocks the police box doors with a pin] Got it.<br />The Doctor: Okay. Suddenly the last nine hundred years of time travel seem a bit less secure.
+
 ;"
 
 	// Here we split it into lines
