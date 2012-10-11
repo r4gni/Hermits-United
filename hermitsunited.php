@@ -49,7 +49,8 @@ Nixon: This person you want to marry: black? Canton: Yes... Nixon: I know what p
 Amy: Why did you do that? Doctor: Oh, I always rip out the last page of a book. Then it doesn't have to end. I hate endings!
 Amy: You laughed!  The Doctor: No, that was just an involuntary snort... of fondness.
 Rory: There are soldiers all over my house, and I'm in my pants. Amy: My whole life I've dreamed of saying that, and I miss it by being someone else.
-The Doctor: (to Amy) Because you were the first. The first face this face saw. And you're seared onto my hearts, Amelia Pond. You always will be. I'm running to you and Rory before you fade from me.;"
+The Doctor: (to Amy) Because you were the first. And you're seared onto my hearts, Amelia Pond. I'm running to you and Rory before you fade from me.
+Preacher: What? The Doctor: I speak horse. He's called Susan. [The horse snorts] The Doctor: And he wants you to respect his life choices.;"
 
 	// Here we split it into lines
 	$lyrics = explode("\n", $lyrics);
