@@ -6,7 +6,7 @@
 /*
 Plugin Name: Hermits United
 Plugin URI: http://wordpress.org/#
-Description: This is not just a plugin, it symbolizes the hope and enthusiasm of all generations in all of time and space, and even in several parallel universes. When activated you will randomly see a quote from <cite>Doctor Who/cite>, the BBC series (>2004) in the upper right of your admin screen on every page. Based on the "Hello Dolly" by Matt Mullenweg.
+Description: This is not just a plugin, it symbolizes the hope and enthusiasm of all generations in all of time and space, and even in several parallel universes. When activated you will randomly see a quote from <cite>Doctor Who/cite>, the BBC series (>2004) in the upper right of your admin screen on every page. Based on the "Hello doctor" by Matt Mullenweg.
 Author: Ragni Zlotos
 Version: 1.5.1
 Author URI: http://typotendency.net/
@@ -19,7 +19,7 @@ Safe? No, of course you're not safe! There's about another billion things out th
 */
 
 function hello_doctor_get_lyric() {
-	/** The Eleventh Doctor of Doctor Who*/
+	/** These are the lyrics to Hello doctor */
 	$lyrics = "
 King Louis: I'm the King of France! Doctor Who: Yeah? Well I'm the Lord of Time
 Ah! Yes! Blimey, sorry! Christmas Eve on a rooftop I saw a chimney... my whole brain just went... What the hell!
@@ -46,16 +46,17 @@ Canton: What about Dr. Song? She dove off a rooftop! The Doctor: Don't worry. Sh
 Oh this is my friend River. Nice hair, clever, and has her own gun. And unlike me she really doesn't mind shooting people. I shouldn't like that.
 River: Oh, the first seven, easy. The Doctor: Seven, really? R: Oh, eight for you, honey. TD: Stop it! R: Make me! TD: Oh, maybe I will!
 Nixon: This person you want to marry: black? Canton: Yes... Nixon: I know what people think of me, but perhaps I am a little more liberal.. Canton: He is.
+Oh this is my friend River. Nice hair, clever, and has her own gun. And unlike me she really doesn't mind shooting people. I shouldn't like that.
+River: Oh, the first seven, easy. The Doctor: Seven, really? R: Oh, eight for you, honey. TD: Stop it! R: Make me! TD: Oh, maybe I will!
+Nixon: This person you want to marry: black? Canton: Yes... Nixon: I know what people think of me, but perhaps I am a little more liberal.. Canton: He is.
 Amy: Why did you do that? Doctor: Oh, I always rip out the last page of a book. Then it doesn't have to end. I hate endings!
-Amy: You laughed!  The Doctor: No, that was just an involuntary snort... of fondness.
+Amy: You laughed! The Doctor: No, that was just an involuntary snort... of fondness.
 Rory: There are soldiers all over my house, and I'm in my pants. Amy: My whole life I've dreamed of saying that, and I miss it by being someone else.
 The Doctor: (to Amy) Because you were the first. And you're seared onto my hearts, Amelia Pond. I'm running to you and Rory before you fade from me.
 Preacher: What? The Doctor: I speak horse. He's called Susan. [The horse snorts] The Doctor: And he wants you to respect his life choices.
 Amy: I'm easily worth two men. You can help, too, if you'd like.
 Dalek Prime Minister: Does it surprise you to know the Daleks have a concept of beauty?<p />The Doctor: I thought you'd run out of ways to make me sick, but hello again. You think hatred is beautiful?<p />Dalek Prime Minister: Perhaps that is why we have never been able to kill you.
-The Doctor: I just need to find the key.<br />Madge: Do you want me to do it with a pin? I'm good with a pin.<br />The Doctor: Multidimensional, triple-encoded temporal interface. Not really susceptible to pointy things.<br />Madge: [Unlocks the police box doors with a pin] Got it.<br />The Doctor: Okay. Suddenly the last nine hundred years of time travel seem a bit less secure.
-
-;"
+The Doctor: I just need to find the key.<br />Madge: Do you want me to do it with a pin? I'm good with a pin.<br />The Doctor: Multidimensional, triple-encoded temporal interface. Not really susceptible to pointy things.<br />Madge: [Unlocks the police box doors with a pin] Got it.<br />The Doctor: Okay. Suddenly the last nine hundred years of time travel seem a bit less secure.";
 
 	// Here we split it into lines
 	$lyrics = explode("\n", $lyrics);
@@ -67,28 +68,39 @@ The Doctor: I just need to find the key.<br />Madge: Do you want me to do it wit
 // This just echoes the chosen line, we'll position it later
 function hello_doctor() {
 	$chosen = hello_doctor_get_lyric();
-	echo "<p id='dolly'>$chosen</p>";
+	echo "<p id='quote'>$chosen</p>";
 	echo "<p id='doctor'>Dr Who<p>";
 }
 
 // Now we set that function up to execute when the admin_footer action is called
-add_action('admin_footer', 'hello_doctor');
+add_action('admin_notices', 'hello_doctor');
 
 // We need some CSS to position the paragraph
 function doctor_css() {
 	// This makes sure that the posinioning is also good for right-to-left languages
 	$x = ( is_rtl() ) ? 'left' : 'right';
 
+	echo"
+	<style type'text/css'>
+	#wp-body{
+	    
+
+	}
+	</style>
+	";
+	
 	echo "
 	<style type='text/css'>
-	#dolly {
-		position: absolute;
-		top: 4.5em;
+	#quote {
+		float: $x;
+		padding-$x: 15px;
+		padding-top: 5px;		
 		margin: 0;
-		padding: 0;
-		$x: 215px;
-		font-size: 12px;
-		color: red;
+		font-size: 11px;
+		color: #9800AF;
+		background-color:#DFF9CF;
+		border: solid, 5px;
+  	    border-color: blue;
 	}
 	</style>
 	";
@@ -96,14 +108,16 @@ function doctor_css() {
 	echo "
 	<style type='text/css'>
 	#doctor {
-		position: absolute;
-		top: 4.5em;
+		background-color:#DFF9CF;
+		float: $x;
+		padding-$x: 15px;
+		padding-top: 5px;		
 		margin: 0;
-		padding: 0;
-		$x: 170px;
-		font-size: 12px;
+		font-size: 11px;
 		color: black;
 		font-style: italic;
+		border: solid, 1px;
+  	    border-color: blue;
 	}
 	</style>
 	";
